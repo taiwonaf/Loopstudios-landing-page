@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+:root {
+    --alata: 'Alata', sans-serif;
+    --josefin: 'Josefin Sans', sans-serif;
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --Dark Gray: hsl(0, 0%, 55%);
+    --Very Dark Gray: hsl(0, 0%, 41%);
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: var(--josefin);
+}
+
+header {
+    background-image: url("./images/mobile/image-hero.jpg");
+    padding: 2rem;
+}
+
+nav {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero {
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+    color: white;
+    border: 1px solid white;
+    padding: 1rem;
+}
+
+.hero h1 {
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-size: 2.6rem;
+}
