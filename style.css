@@ -104,6 +104,7 @@ h2 {
     text-transform: uppercase;
     justify-self: flex-end;
     z-index: 2;
+    text-align: left;
 }
 
 .img {
@@ -287,6 +288,9 @@ footer .left {
     flex-direction: column;
     justify-content: center;
 }
+.header-menu ul li {
+    list-style: none;
+}
 
 .header-menu ul li a {
     color: white;
@@ -329,4 +333,88 @@ nav .logo {
 
 .active-ham .header-menu {
     display: block;
+}
+
+@media (min-width: 900px) {
+    .hamburger {
+        display: none;
+    }
+
+    .header-menu {
+        display: block;
+        background-color: transparent;
+        position: static;
+        padding: 0;
+    }
+
+    .header-menu ul {
+        flex-direction: row;
+    }
+
+    header {
+        background-repeat: no-repeat;
+        background: url("./images/desktop/image-hero.jpg");
+    }
+
+    .header-menu ul li a {
+        font-size: 1rem;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .hero {
+        max-width: 47vw;
+        align-self: flex-start;
+        margin: 5rem 0;
+    }
+
+    .about {
+        position: relative;
+    }
+
+    .about .about-img-container {
+        width: 55vw;
+    }
+
+    .about .about-text {
+        background-color: white;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 55vw;
+        padding: 6rem 3rem 2rem 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about .about-text h1 {
+        max-width: 500px;
+        font-size:3.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .about .about-text p {
+        font-size: 1.5rem;
+    }
+
+    .image-gallery {
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 23.9rem;
+    }
+
+    .creations h1 {
+        font-size: 4rem;
+    }
+
+    .one {
+        background-image: url("./images/desktop/image-deep-earth.jpg");
+    }
+    
 }
