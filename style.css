@@ -515,6 +515,7 @@ nav .logo {
         right: 0;
     }
 
+
     .footer-wrapper {
         max-width: 90rem;
         width: 100%;
@@ -537,6 +538,9 @@ nav .logo {
     }
 
     footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 2rem 0;
     }
 }
